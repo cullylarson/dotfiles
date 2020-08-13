@@ -1,4 +1,5 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" VIM-PLUG
+" use :PlugInstall to install plugins
 " c.f. https://github.com/junegunn/vim-plug for how to install, update, etc.
 call plug#begin('~/.vim/plugged')
 
@@ -27,7 +28,12 @@ syntax enable
 set background=dark
 set t_Co=256
 let g:solarized_termcolors=256
-colorscheme solarized
+
+try
+    colorscheme solarized
+catch /^Vim\%((\a\+)\)\=:E185/
+    colorscheme peachpuff
+endtry
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" GUI
 set guifont=Monospace\ 11
