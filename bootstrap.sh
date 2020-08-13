@@ -48,6 +48,7 @@ link() {
 }
 
 mirrorfiles() {
+    link ".zshrc"        ".zshrc"
     link ".bashrc"       ".bashrc"
     link ".bash_profile" ".bash_profile"
     link ".bash_prompt"  ".bash_prompt"
