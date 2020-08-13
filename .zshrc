@@ -76,3 +76,6 @@ bindkey '^j' vi-cmd-mode
 setopt inc_append_history
 # Reloads the history whenever you use it
 setopt share_history
+
+# search back, like in bash
+bindkey "^R" history-incremental-search-backward
