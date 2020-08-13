@@ -56,6 +56,7 @@ mirrorfiles() {
     link ".exports"      ".exports"
     link ".functions"    ".functions"
     link ".vimrc"        ".vimrc"
+    link ".tmux.conf"    ".tmux.conf"
 
     e_success "Dotfiles update complete!"
 }
