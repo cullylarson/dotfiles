@@ -9,4 +9,4 @@ bash .dotfiles/bootstrap.sh
 
 ## Extras
 
-You can put any custom stuff into `~/.extras` or `~/.path`.
+You can put any custom stuff into `~/.extra` or `~/.path`.
