@@ -1,6 +1,7 @@
 ### GIT
 
 alias gc='git commit'
+alias gco='git checkout'
 alias gs='git status'
 alias gp='git push'
 alias gd='git diff'
