@@ -1,0 +1,16 @@
+### FUNCTIONS
+
+mkcd () {
+    mkdir -p -- "$1" && cd -- "$1"
+}
+
+# edit all files matching an ag query
+vimag () {
+    if [[ $# -le 0  ]]
+    then
+        echo "ERROR: You must provide a search parameter." 1>&2
+        return
+    fi
+
+    vim `ag -l $1`
+}

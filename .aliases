@@ -1,0 +1,70 @@
+### GIT
+
+alias gc='git commit'
+alias gs='git status'
+alias gp='git push'
+alias gd='git diff'
+alias gaa='git add -A'
+alias gll="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+# show directory tree of project
+alias gdir="git ls-files | xargs -n 1 dirname | sort | uniq"
+
+### TMUX
+
+alias tma="tmux a -t "
+alias tmls="tmux ls"
+alias tmn="tmux new -s "
+
+### NODE
+
+alias npr="npm run "
+alias npi="npm install --save "
+alias npd="npm i -D "
+
+### DOCKER
+
+alias dps="docker ps"
+alias dlf="docker logs -f"
+alias dup="docker-compose up -d && docker ps"
+alias dwn="docker-compose down"
+
+
+### FASD
+
+if hash fasd 2>/dev/null; then
+    eval "$(fasd --init auto)"
+
+    alias a='fasd -a'        # any
+    alias s='fasd -si'       # show / search / select
+    alias d='fasd -d'        # directory
+    alias f='fasd -f'        # file
+    alias sd='fasd -sid'     # interactive directory selection
+    alias sf='fasd -sif'     # interactive file selection
+    alias z='fasd_cd -d'     # cd, same functionality as j in autojump
+    alias zz='fasd_cd -d -i' # cd with interactive selection
+
+    alias v='f -e vim'       # quick opening files with vim
+    alias gv='f -e gvim'     # same, but for gvim
+fi
+
+### MISC
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+
+    alias ls='ls --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"
