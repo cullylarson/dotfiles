@@ -48,6 +48,9 @@ link() {
 }
 
 mirrorfiles() {
+    # for vim swapfiles
+    mkdir -p "${HOME}/.tmp/vim"
+
     link ".zshrc"        ".zshrc"
     link ".bashrc"       ".bashrc"
     link ".bash_profile" ".bash_profile"

@@ -40,7 +40,7 @@ set guifont=Monospace\ 11
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" SWAP
 set swapfile                     " swap file on
-set directory^=$HOME/.tmp/vim//        " store swap files here
+set directory^=$HOME/.tmp/vim//  " store swap files here. you need the ending // to indicate that the directory information will be saved in the filename.
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" TABS
 set tabstop=4         " number of visual spaces per TAB
