@@ -153,6 +153,9 @@ set relativenumber
 " current line number is absolute
 set number
 
+" toggle numbering
+nnoremap <leader>n :setlocal number! <bar> :setlocal relativenumber!<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" COMMANDS
 " find weird characters. useful for finding non-standard whitespace
 command Weird /[^\x00-\x7F]
