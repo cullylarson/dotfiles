@@ -51,6 +51,10 @@ set expandtab         " tabs are spaces
 nmap tm :tabm +1<CR>
 " move tab left
 nmap tn :tabm -1<CR>
+" switch to two spaces
+nnoremap <leader>2 :set tabstop=2 <bar> :set shiftwidth=2 <bar> :set softtabstop=2<CR>
+" switch to four spaces
+nnoremap <leader>4 :set tabstop=4 <bar> :set shiftwidth=4 <bar> :set softtabstop=4<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" UI
 set showcmd           " show command in bottom bar
