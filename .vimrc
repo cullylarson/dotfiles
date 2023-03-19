@@ -72,6 +72,10 @@ nnoremap <leader><space> :nohlsearch<CR>
 nnoremap j gj
 nnoremap k gk
 
+" stay centered while paging up/down
+nnoremap <C-u> <C-u>zz
+nnoremap <C-d> <C-d>zz
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" WINDOWS
 " navigate windows using ctrl+jklh
 "nnoremap <C-J> <C-W><C-J>
