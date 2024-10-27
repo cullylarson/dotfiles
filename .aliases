@@ -26,8 +26,8 @@ alias npd="npm i -D "
 
 alias dps="docker ps"
 alias dlf="docker logs -f"
-alias dup="docker-compose up -d && docker ps"
-alias dwn="docker-compose down"
+alias dup="docker compose up -d && docker ps"
+alias dwn="docker compose down"
 
 
 ### FASD
