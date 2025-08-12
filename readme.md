@@ -10,3 +10,7 @@ bash .dotfiles/bootstrap.sh
 ## Extras
 
 You can put any custom stuff into `~/.extra` or `~/.path`.
+
+## iterm2
+
+c.f. https://gist.github.com/kevin-smets/8568070#iterm2
