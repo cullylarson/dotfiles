@@ -52,6 +52,7 @@ mirrorfiles() {
     mkdir -p "${HOME}/.tmp/vim"
 
     link ".zshrc"        ".zshrc"
+    link ".p10k.zsh"     ".p10k.zsh"
     link ".bashrc"       ".bashrc"
     link ".bash_profile" ".bash_profile"
     link ".bash_prompt"  ".bash_prompt"
