@@ -15,3 +15,4 @@ You can put any custom stuff into `~/.extra` or `~/.path`.
 
 - Add the Solarized Dark theme: https://gist.github.com/kevin-smets/8568070#iterm2
 - Set up the Powerlevel10k theme: https://gist.github.com/kevin-smets/8568070#powerlevel9k--powerlevel10k
+  - Will need to run `p10k configure` to install a font.
