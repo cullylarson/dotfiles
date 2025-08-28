@@ -50,7 +50,7 @@ fi
 
 ### SILVER SEARCHER
 
-alias agi="ag --ignore node_modules --ignore dist --ignore tsconfig.tsbuildinfo"
+alias agi="ag --ignore node_modules --ignore dist --ignore tsconfig.tsbuildinfo --ignore test-results"
 
 ### MISC
 
