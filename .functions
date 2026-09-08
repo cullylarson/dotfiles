@@ -14,3 +14,8 @@ vimag () {
 
     vim `ag -l $1`
 }
+
+# optimize a video file
+ffmpeg-optimize() {
+  ffmpeg -i "$1" -c:v libx264 -crf 23 -preset medium -c:a aac -b:a 128k "$2"
+}
